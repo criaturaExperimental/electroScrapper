@@ -7,4 +7,6 @@ app.on('ready', () => {
 
   mainWindow.loadURL(path.join('file://', __dirname, 'index.html'));
 
+  mainWindow.webContents.openDevTools();
+
 });
